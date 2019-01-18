@@ -1,0 +1,25 @@
+{
+  "name": "@nikhil200816/ngx-json-to-csvgenerator",
+  "version": "1.0.2",
+  "description": "A Simple directive to Export CSV from Json.",
+  "author": "Nikhil Vashistha",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NikhilVashistha/NgxJsonToCSVGenerator.git"
+  },
+  "homepage": "https://github.com/NikhilVashistha/NgxJsonToCSVGenerator",
+  "keywords": [
+    "angular",
+    "CSV",
+    "Json",
+    "directive",
+    "javascript",
+    "typescript",
+    "ngx"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
+    "@angular/core": "^6.0.0-rc.0 || ^6.0.0"
+  }
+}

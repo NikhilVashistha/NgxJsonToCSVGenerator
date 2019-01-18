@@ -121,6 +121,46 @@
           }
         }
       }
+    },
+    "NgxJsonToCSVGenerator": {
+      "root": "projects/ngx-json-to-csvgenerator",
+      "sourceRoot": "projects/ngx-json-to-csvgenerator/src",
+      "projectType": "library",
+      "prefix": "Ngx",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ngx-json-to-csvgenerator/tsconfig.lib.json",
+            "project": "projects/ngx-json-to-csvgenerator/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "project": "projects/ngx-json-to-csvgenerator/ng-package.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-json-to-csvgenerator/src/test.ts",
+            "tsConfig": "projects/ngx-json-to-csvgenerator/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-json-to-csvgenerator/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ngx-json-to-csvgenerator/tsconfig.lib.json",
+              "projects/ngx-json-to-csvgenerator/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "JsonToCSVGeneratorAngular"

@@ -15,6 +15,14 @@
     "lib": [
       "es2017",
       "dom"
-    ]
+    ],
+    "paths": {
+      "NgxJsonToCSVGenerator": [
+        "dist/ngx-json-to-csvgenerator"
+      ],
+      "NgxJsonToCSVGenerator/*": [
+        "dist/ngx-json-to-csvgenerator/*"
+      ]
+    }
   }
 }
